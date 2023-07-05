@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeKaro Day 3 Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo-img">
+                <img src="./Assests/airbnb-logo.png" alt="airbnb-logo">
+            </div>
+            <div class="center-nav-item">
+                <div class="anywhere"><p>Anywhere</p></div>
+                <div class="anyweek"><p>Any week</p></div>
+                <div class="guests"><p>Add guests</p></div>
+                <div class="search-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg></div>
+                
+            </div>
+            <div class="right-nav-item">
+                <div><p>Airbnb your home</p></div>
+                <div><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+                    <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
+                  </svg></div>
+                  <div class="svg-border"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                  </svg></div>
+
+            </div>
+        </div>
+        <div class="top-navigation">
+            <div class="category-flex">
+                <div class="item-flex">
+                    <img src="./Assests/rooms.jpg" class="category-image" alt="">
+                    <p class="category-name">Rooms</p>
+                </div>
+                <div class="item-flex">
+                    <img src="./Assests/amazingviews.jpg" class="category-image" alt="">
+                    <p class="category-name">Amazing Views</p>
+                </div>
+                <div class="item-flex">
+                    <img src="./Assests/farms.jpg" class="category-image" alt="">
+                    <p class="category-name">Farms</p>
+                </div>
+                <div class="item-flex">
+                    <img src="./Assests/lake.jpg" class="category-image" alt="">
+                    <p class="category-name">Lake</p>
+                </div>
+                <div class="item-flex">
+                    <img src="./Assests/b&b.jpg" class="category-image" alt="">
+                    <p class="category-name">Bed & Breakfasts</p>
+                </div>
+                <div class="item-flex">
+                    <img src="./Assests/pools.jpg" class="category-image" alt="">
+                    <p class="category-name">Amazing Pools</p>
+                </div>
+                <div class="item-flex">
+                    <img src="./Assests/omg.jpg" class="category-image" alt="">
+                    <p class="category-name">OMG!</p>
+                </div>
+                <div class="item-flex">
+                    <img src="./Assests/luxe.jpg" class="category-image" alt="">
+                    <p class="category-name">Luxe</p>
+                </div>
+                <div class="item-flex">
+                    <img src="./Assests/beach.jpg" class="category-image" alt="">
+                    <p class="category-name">Beachfront</p>
+                </div>
+                <div class="item-flex">
+                    <img src="./Assests/lakefront.jpg" class="category-image" alt="">
+                    <p class="category-name">Lakefront</p>
+                </div>
+                <div class="item-flex">
+                    <img src="./Assests/camping.jpg" class="category-image" alt="">
+                    <p class="category-name">Camping</p>
+                </div>
+                <div class="item-flex">
+                    <img src="./Assests/countryside.jpg" class="category-image" alt="">
+                    <p class="category-name">Countryside</p>
+                </div>
+                <div class="item-flex">
+                    <img src="./Assests/cabins.jpg" class="category-image" alt="">
+                    <p class="category-name">Cabins</p>
+                </div>
+                <div class="item-flex">
+                    <img src="./Assests/historicalhomes.jpg" class="category-image" alt="">
+                    <p class="category-name">Historical Homes</p>
+                </div>
+                <div class="item-flex">
+                    <img src="./Assests/tropical.jpg" class="category-image" alt="">
+                    <p class="category-name">Tropical</p>
+                </div>
+                <div class="item-flex">
+                    <img src="./Assests/tinyhomes.jpg" class="category-image" alt="">
+                    <p class="category-name">Tiny Homes</p>
+                </div>
+            </div>
+            <div class="filter-toggle">
+                <div class="left-filter">
+                    <p class="filter-text">Display total price</p>
+                </div>
+                <div class="rightfilter">
+                    <p class="filter-text-2">Include all fees, before taxes</p>
+                </div>
+                <div class="toggle-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-toggle-off" viewBox="0 0 16 16">
+                        <path d="M11 4a4 4 0 0 1 0 8H8a4.992 4.992 0 0 0 2-4 4.992 4.992 0 0 0-2-4h3zm-6 8a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM0 8a5 5 0 0 0 5 5h6a5 5 0 0 0 0-10H5a5 5 0 0 0-5 5z"/>
+                      </svg>
+                </div>
+            </div>
+        </div>
+        <div class="hotel-cards">
+            <div class="hotel-cards-flex">
+                <img src="./Assests/hotel1.jpg" class="hotel-img" alt="hotel-image">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="red" class="bi bi-heart-fill heart-wishlist" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                  </svg>
+                <div class="hotel-content">
+                    <div class="hotel-details">
+                        <h4 class="location">Valencia, Spain</h4>
+                        <p class="stars"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                          </svg> 4.95</p>
+                        
+                    </div>
+                    <div class="details-two">
+                        <p class="person-stay">Stay with Valentina . Interior Designer</p>
+                        <p class="date">15-22 July</p>
+                        <p class="cost"><b>Rs 8,192</b> night</p>
+                    </div>
+                
+                </div>
+            </div>
+            <div class="hotel-cards-flex">
+                <img src="./Assests/hotel2.jpg" class="hotel-img" alt="hotel-image">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="red" class="bi bi-heart-fill heart-wishlist" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                  </svg>
+                <div class="hotel-content">
+                    <div class="hotel-details">
+                        <h4 class="location">Valencia, Spain</h4>
+                        <p class="stars"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                          </svg> 4.95</p>
+                        
+                    </div>
+                    <div class="details-two">
+                        <p class="person-stay">Stay with Valentina . Interior Designer</p>
+                        <p class="date">15-22 July</p>
+                        <p class="cost"><b>Rs 8,192</b> night</p>
+                    </div>
+                
+                </div>
+            </div>
+            <div class="hotel-cards-flex">
+                <img src="./Assests/hotel3.jpg" class="hotel-img" alt="hotel-image">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="red" class="bi bi-heart-fill heart-wishlist" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                  </svg>
+                <div class="hotel-content">
+                    <div class="hotel-details">
+                        <h4 class="location">Valencia, Spain</h4>
+                        <p class="stars"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                          </svg> 4.95</p>
+                        
+                    </div>
+                    <div class="details-two">
+                        <p class="person-stay">Stay with Valentina . Interior Designer</p>
+                        <p class="date">15-22 July</p>
+                        <p class="cost"><b>Rs 8,192</b> night</p>
+                    </div>
+                
+                </div>
+            </div>
+            <div class="hotel-cards-flex">
+                <img src="./Assests/hotel4.jpg" class="hotel-img" alt="hotel-image">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="red" class="bi bi-heart-fill heart-wishlist" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                  </svg>
+                <div class="hotel-content">
+                    <div class="hotel-details">
+                        <h4 class="location">Valencia, Spain</h4>
+                        <p class="stars"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                          </svg> 4.95</p>
+                        
+                    </div>
+                    <div class="details-two">
+                        <p class="person-stay">Stay with Valentina . Interior Designer</p>
+                        <p class="date">15-22 July</p>
+                        <p class="cost"><b>Rs 8,192</b> night</p>
+                    </div>
+                
+                </div>
+            </div>
+            <div class="hotel-cards-flex">
+                <img src="./Assests/hotel5.jpg" class="hotel-img" alt="hotel-image">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="red" class="bi bi-heart-fill heart-wishlist" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                  </svg>
+                <div class="hotel-content">
+                    <div class="hotel-details">
+                        <h4 class="location">Valencia, Spain</h4>
+                        <p class="stars"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                          </svg> 4.95</p>
+                        
+                    </div>
+                    <div class="details-two">
+                        <p class="person-stay">Stay with Valentina . Interior Designer</p>
+                        <p class="date">15-22 July</p>
+                        <p class="cost"><b>Rs 8,192</b> night</p>
+                    </div>
+                
+                </div>
+            </div>
+            <div class="hotel-cards-flex">
+                <img src="./Assests/hotel6.jpg" class="hotel-img" alt="hotel-image">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="red" class="bi bi-heart-fill heart-wishlist" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                  </svg>
+                <div class="hotel-content">
+                    <div class="hotel-details">
+                        <h4 class="location">Valencia, Spain</h4>
+                        <p class="stars"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                          </svg> 4.95</p>
+                        
+                    </div>
+                    <div class="details-two">
+                        <p class="person-stay">Stay with Valentina . Interior Designer</p>
+                        <p class="date">15-22 July</p>
+                        <p class="cost"><b>Rs 8,192</b> night</p>
+                    </div>
+                
+                </div>
+            </div>
+            <div class="hotel-cards-flex">
+                <img src="./Assests/hotel7.jpg" class="hotel-img" alt="hotel-image">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="red" class="bi bi-heart-fill heart-wishlist" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                  </svg>
+                <div class="hotel-content">
+                    <div class="hotel-details">
+                        <h4 class="location">Valencia, Spain</h4>
+                        <p class="stars"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                          </svg> 4.95</p>
+                        
+                    </div>
+                    <div class="details-two">
+                        <p class="person-stay">Stay with Valentina . Interior Designer</p>
+                        <p class="date">15-22 July</p>
+                        <p class="cost"><b>Rs 8,192</b> night</p>
+                    </div>
+                
+                </div>
+            </div>
+            <div class="hotel-cards-flex">
+                <img src="./Assests/hotel8.jpg" class="hotel-img" alt="hotel-image">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="red" class="bi bi-heart-fill heart-wishlist" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                  </svg>
+                <div class="hotel-content">
+                    <div class="hotel-details">
+                        <h4 class="location">Valencia, Spain</h4>
+                        <p class="stars"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                          </svg> 4.95</p>
+                        
+                    </div>
+                    <div class="details-two">
+                        <p class="person-stay">Stay with Valentina . Interior Designer</p>
+                        <p class="date">15-22 July</p>
+                        <p class="cost"><b>Rs 8,192</b> night</p>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+        <div class="footer-part">
+            <div class="left-footer-part">
+                <div class="copyright">
+                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-c-circle" viewBox="0 0 16 16">
+                        <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512Z"/>
+                      </svg> 
+                      <p>2023 Airbnb, Inc.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Sitemap</a>
+                    <a href="#">Company Details</a>
+                    <a href="#">Destination</a>
+                </div>
+                  
+            </div>
+            <div class="right-footer-part">
+                <div>
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+                        <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
+                        </svg> English (IN)</a>
+                </div>
+                
+                    <a href="#"><p><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                        <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4v1.06Z"/>
+                        </svg> INR</p></a>
+                    <div>
+                        <a href="#">Support & Resources <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                            <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                            </svg></a>
+                    </div>    
+                    
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
