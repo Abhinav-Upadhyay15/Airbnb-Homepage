@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* From here the different category styling */
+.container{
+    /* height: 1200px; */
+}
+
+.category-flex{
+    /* position: sticky;
+    top: 0;
+    background-color: white; */
+    margin-top: 50px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;  
+    flex-wrap: wrap;
+}
+
+.item-flex{
+    object-fit: cover;
+    /* border: 2px solid red; */
+}
+.item-flex:hover{
+    cursor: pointer;
+}
+.category-image{
+    width: 25px;
+    display: block;
+    margin: 1px auto;   
+}
+
+.category-name{
+    text-align: center;
+    font-size: 11px;
+    padding: 0;
+    margin: 0;
+}
+.filter-toggle{
+    width: 500px;
+    height: 35px;
+    margin: 1px auto;
+    margin-top: 40px;
+    background-color:aliceblue;
+    border: 2px solid lightgray;
+    border-radius: 12px;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.filter-text{
+    color: black;
+    font-weight: 700;
+    font-size: 14px; 
+    padding-right: 50px;
+    border-right: 2px solid gray;
+}
+
+.filter-text-2{
+    color: gray;
+    font-size: 14px;
+    
+    
+}
+/* From here the topmost navbar css styling */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 30px;
+    /* position: sticky;
+    top:0; */
+    border-bottom: 1.5px solid lightgray;
+}
+.logo-img img{
+    width: 100px;
+
+}
+.center-nav-item{
+    width: 450px;
+    padding: 2px 10px;
+    height: 40px;
+    border: 2px solid lightgray;
+    border-radius: 40px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.anywhere{
+    font-size: 18px;
+    border-right: 1.5px solid lightgray;
+    padding-right: 25px;
+    padding-left: 25px;
+    font-weight: 600;
+
+}
+.anyweek{
+    font-size: 18px;
+    border-right: 1.5px solid lightgray;
+    padding-right: 25px;
+    padding-left: 25px;
+    font-weight: 600;
+
+}
+.guests{
+    font-size: 18px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.search-icon{
+    margin-left: px;
+    margin-right: 10px;
+}
+.right-nav-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.right-nav-item p{
+    font-size: 16px;
+    font-weight: 600;
+}
+.svg-border{
+    text-align: center;
+    border: 2px solid gray;
+    width: 60px;
+    padding: 5px 5px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+}
+
+/* From here the hotel cards section styling begins */
+.hotel-cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.hotel-cards-flex{
+    width: 280px;
+    height: 350px;
+    margin: 20px 15px;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    position: relative;
+    transition: 0.5s;
+}
+.hotel-cards-flex:hover{
+    border: 2px solid white;
+    width: 290px;
+    height: 370px;
+    cursor: pointer;
+}
+.hotel-img{
+    width: 100%;
+    height: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    /* position: relative; */
+}
+.heart-wishlist{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.date{
+    margin-bottom: 15px;
+}
+.location, .date, .person-stay, .cost{
+    margin-left: 6px;
+    font-size: 16px;
+}
+.hotel-details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.stars{
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+/* Footer part starts here  */
+.footer-part{
+    height: 50px;
+}
+.footer-part a{
+    text-decoration: none;
+    color: black;
+
+}
+
+.footer-part{
+    border-top: 2px solid lightgray;
+    margin: 2px 30px;
+    /* padding-top: 5px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    bottom: 0;
+    background-color: white;
+}
+.left-footer-part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+
+}
+.copyright{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 8px;
+}
+
+.right-footer-part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+
